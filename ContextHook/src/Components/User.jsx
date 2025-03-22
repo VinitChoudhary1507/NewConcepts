@@ -8,7 +8,7 @@ const UserProfile = () => {
   return (
     <div>
       <h1>Welcome, {user.name}</h1>
-      {user.isLoggedout && <button onClick={handleLogin}></button>}
+      {user.isLoggedout && <button onClick={handleLogin}>Login </button>}
     </div>
   );
 };
