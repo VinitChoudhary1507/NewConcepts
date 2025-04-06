@@ -5,11 +5,11 @@ export default function TableRowSelection() {
     const [selectedRows, setSelectedRows] = useState([]);
     const navigate = useNavigate();
 
-    const data = [
-        { id: 1, name: 'John', age: 25 },
-        { id: 2, name: 'Jane', age: 30 },
-        { id: 3, name: 'Mike', age: 28 },
-    ];
+        const data = [
+            { id: 1, name: 'John', age: 25 },
+            { id: 2, name: 'Jane', age: 30 },
+            { id: 3, name: 'Mike', age: 28 },
+        ];
 
     const handleSelect = (row) => {
         setSelectedRows((prev) =>

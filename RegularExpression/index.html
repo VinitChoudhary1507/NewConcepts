@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="para">
+        orem ipsum dolor sit amet consectetur adipisicing elit
+        Corporis veniam adipisci, minus, porro
+        eligendi amet exercitationem cupiditate dicta iure vero accusamus. Quo doloremque temporibus
+        corporis obcaecati a dignissimos fugiat laudantium? 2132314</div>
+    <script>
+        const regX = document.querySelector('.para')
+        let text =""
+        text = regX.textContent;
+        console.log(text);
+        const lowercase = /[a-z]/g;
+        const lastdigits= /\d$/;
+        console.log('Last char is:', text.charAt(text.length - 1));
+       console.log('Char code is:', text.charCodeAt(text.length - 1));
+
+        const statement = lowercase.test(text);
+        console.log(statement)
+        if (statement) {
+            console.log('The string ends with a digit')
+        }
+
+    </script>
+</body>
+
+</html>
